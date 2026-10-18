@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Alpha — Portfolio</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .mockup-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+
+    .mockup-card {
+      border: 1px solid rgba(255,255,255,0.2);
+      padding: 0.5rem;
+      transition: opacity 0.2s;
+    }
+
+    .mockup-card:hover {
+      opacity: 0.8;
+    }
+
+    .mockup-card img,
+    .mockup-card video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      opacity: 0.7;
+    }
+
+    .back-link:hover {
+      opacity: 1;
+    }
+
+    .project-meta {
+      margin-bottom: 2rem;
+      opacity: 0.6;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a href="../index.html" class="back-link">&larr; Back to home</a>
+
+    <header>
+      <h1>Project Alpha</h1>
+      <p class="project-meta">
+        <span>Role: Lead Designer</span> •
+        <span>Date: Oct 2026</span>
+      </p>
+    </header>
+
+    <section class="mockup-grid">
+      <!-- Static screenshot -->
+      <div class="mockup-card">
+        <img src="../assets/screenshots/desktop-view.png" alt="Desktop view of Project Alpha">
+        <figcaption>Desktop View</figcaption>
+      </div>
+
+      <!-- Another screenshot -->
+      <div class="mockup-card">
+        <img src="../assets/screenshots/mobile-view.png" alt="Mobile view of Project Alpha">
+        <figcaption>Mobile View</figcaption>
+      </div>
+
+      <!-- Video demo -->
+      <div class="mockup-card">
+        <video controls muted playsinline>
+          <source src="../assets/videos/project-demo.mp4" type="video/mp4">
+          Your browser does not support video playback.
+        </video>
+        <figcaption>Interactive Demo</figcaption>
+      </div>
+
+      <!-- Additional screenshot -->
+      <div class="mockup-card">
+        <img src="../assets/screenshots/detail-shot.png" alt="Detail shot of key feature">
+        <figcaption>Feature Detail</figcaption>
+      </div>
+    </section>
+
+    <section class="description">
+      <h2>About this project</h2>
+      <p>Brief description of what you built and why. Keep it concise.</p>
+    </section>
+  </main>
+</body>
+</html>
