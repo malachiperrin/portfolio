@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Automation — Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .mockup-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+
+    .mockup-card {
+      border: 1px solid rgba(255,255,255,0.2);
+      padding: 0.5rem;
+      transition: opacity 0.2s;
+    }
+
+    .mockup-card:hover {
+      opacity: 0.8;
+    }
+
+    .mockup-card img,
+    .mockup-card video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      opacity: 0.7;
+    }
+
+    .back-link:hover {
+      opacity: 1;
+    }
+
+    .project-meta {
+      margin-bottom: 2rem;
+      opacity: 0.6;
+      font-size: 0.9rem;
+    }
+
+    .email-slots {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      margin: 25px;
+    }
+
+    .email-slot-split {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 30px;
+    }
+
+    .email-slot-split, div > img,
+    .email-slot img {
+      height: 487px;
+      max-height: 487px;
+      margin: 10px;
+    }
+
+    .slot-text-center {
+      text-align: center;
+    }
+
+    .text-box {
+      display: flex;
+      flex-direction: column;
+      padding: 15px;
+      margin: 20px;
+    }
+
+    .text-box span {
+      text-align: center;
+      font-size: 18px;
+      font-weight: 700;
+      margin: 5px;
+    }
+
+    .text-box p {
+      text-align: justify;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a href="index.html" class="back-link">&larr; Back to home</a>
+
+    <header>
+      <h1>Optimizing Flow</h1>
+      <p class="project-meta">
+        <span>Digital & Print Media</span> •
+        <span>Date: Oct 2026</span>
+      </p>
+    </header>
+
+    <section class="description">
+      <h2>About this project</h2>
+      <p style="text-align: justify">This is a proof-of-concept redesign I built on my own for a national print-and-shipping retailer's post-visit survey email flow.  The idea came from one customer experience. Someone requested their package be held at the retail location so they would not have to be home for delivery. The pickup itself went smoothly. No wait time. No issues with staff. But the delivery to the store had problems. When the survey email arrived, the customer gave the retail location a low score. They were not reviewing the store. They were reviewing the delivery carrier, and there was no way for them to clarify.  This is not a rare situation. It happens regularly when one email covers multiple parties involved in the shipment. The customer cannot say who they are actually rating. Retail stores get penalized for delivery problems. The delivery side never gets feedback on what went wrong.  I brought this up at work. People agreed it was a real problem. Nothing happened while I was there. So I designed the solution myself. I mapped the existing flow, found where the attribution breaks down, and built a new sequence. It includes a clearer initial email, reminder emails that stop once someone responds, paths for positive and negative feedback, and consent handling.  Status: design concept only. Never implemented or tested.</p>
+    </section>
+
+
+      <section class="mockup-grid">
+
+        <!-- Additional screenshot -->
+        <div class="mockup-card">
+          <img src="/assets/images/email/roughdraft.png" width="100%" height="300px" />
+          <figcaption>The Outline</figcaption>
+        </div>
+
+
+    </section>
+
+    <div class="text-box">
+      <span>Section 1 — The Initial Email Flow</span>
+      <p>The initial email is the first touchpoint in the chain. It thanks the customer for choosing the service and asks for feedback using a two-option interface: a smiley face button for "no complaints" and a frowny face button for "I have a complaint." There is also an opt-out option that immediately terminates the survey sequence. The privacy policy is linked in the footer.</p>
+      <p>If the customer does not respond within 24 hours, the first reminder email is sent. A second and final reminder goes out at the 48-hour mark. Both nudges use softer language to avoid sounding pushy while still encouraging completion. Once any response is recorded, the customer is removed from the reminder queue to prevent unnecessary follow-ups.</p>
+    </div>
+
+
+    <article class="email-slots">
+      <div class="email-slot">
+        <img src="/assets/images/email/email.png" alt="email initial"/>
+        <p class="slot-text-center">Initial Email</p>
+      </div>
+      <div class="email-slot">
+        <img src="/assets/images/email/emailnudge1.png" alt="email initial"/>
+        <p class="slot-text-center">1st Nudge</p>
+      </div>
+      <div class="email-slot">
+        <img src="/assets/images/email/emailnudge2.png" alt="email initial"/>
+        <p class="slot-text-center">2nd Nudge (Final)</p>
+      </div>
+    </article>
+
+    <div class="text-box">
+      <span>Section 2 — The Positive Chain</span>
+      <p>When a customer indicates a positive experience, a confirmation email is sent thanking them for their feedback. The message acknowledges their response and expresses appreciation for choosing the service.</p>
+      <p>At the bottom of the email, optional recommendations are displayed. These might include tips for future shipments, information on loyalty programs, or suggestions for related services. Because the customer is already in a favorable mood, this is an opportunity to add value without undermining the goodwill.</p>
+    </div>
+
+    <article class="email-slots">
+      <div class="email-slot-split">
+          <div>
+            <img src="/assets/images/email/positiveemail1.png" alt="email initial"/>
+            <p class="slot-text-center">If Positive Feedback Was Given</p>
+          </div>
+
+          <div>
+            <p>Unlike the negative chain, there is no further back-and-forth. The interaction ends here unless the customer chooses to engage with one of the recommendations. This respects their time while still leaving the door open for future engagement.</p>
+          </div>
+      </div>
+    </article>
+
+    <div class="text-box">
+      <span>Section 3 — The Negative Chain</span>
+      <p>When a customer indicates a negative experience, a follow-up email is triggered within a few hours. The message opens with an apology and presents a checklist of common issues, allowing only one selection. This forces the customer to categorize their complaint, which enables automatic routing to the correct team.</p>
+      <p>After the customer submits their reason, an acknowledgment email confirms receipt and outlines the next steps. The message explains the review timeline, assigns a reference number, and sets expectations for how and when the customer will be contacted again. This closes the loop and reduces anxiety about whether the complaint was actually received.</p>
+    </div>
+
+    <article class="email-slots">
+      <div class="email-slot">
+        <img src="/assets/images/email/negativeemail1.png" alt="email initial"/>
+        <p class="slot-text-center">If Negative Feedback Was Given</p>
+      </div>
+      <div class="email-slot">
+        <img src="/assets/images/email/negativeemail2.png" alt="email initial"/>
+        <p class="slot-text-center">Acknowledgement of Negative Feedback</p>
+      </div>
+    </article>
+
+    <div class="text-box">
+      <span>Section 4 — Status Updates and Resolution</span>
+      <p>This section handles ongoing communication throughout the complaint lifecycle. A status update email is sent once an agent is assigned, confirming the case is under review and providing an estimated timeline.</p>
+      <p>When the case is resolved, a final email is sent with a summary of what was done. The customer is given a 24-hour window to reopen the case if the resolution does not meet their needs. After that window closes, the case is archived. This creates a clear endpoint while preserving customer agency during the critical period after resolution.</p>
+    </div>
+
+    <article class="email-slots">
+      <div class="email-slot">
+        <img src="/assets/images/email/statusupdateemail1.png" alt="email initial"/>
+        <p class="slot-text-center">Status Update</p>
+      </div>
+      <div class="email-slot">
+        <img src="/assets/images/email/statusresolvedemail1.png" alt="email initial"/>
+        <p class="slot-text-center">Issue Was Resolved</p>
+      </div>
+    </article>
+
+  </main>
+
+<footer>
+  <h3 style="text-align: center;">Conclusion</h3>
+  <p style="margin: 10px; text-align: justify;">This project started with one customer who gave the retail store a bad rating because of a delivery problem that was not the store's fault. That single review carried forward into performance dashboards, compensation calculations, and operational decisions. The data looked wrong, but no one could find why.
+  I mapped the existing flow, identified where attribution breaks down, and built a replacement sequence that separates the pickup experience from the shipment experience at the moment the customer interacts. The redesign includes a clearer initial email with contextual language, a reminder cadence with suppression logic, distinct paths for positive and negative feedback, and proper consent handling throughout.
+  The solution was never implemented. I brought the issue to management, it was acknowledged, and then set aside. So I designed the fix myself as a proof of concept.
+  What this project demonstrates is that surface-level symptoms (bad store ratings) often hide deeper structural issues (multi-party service journeys without clear attribution). Fixing the problem does not require new technology. It requires paying attention to the customer journey, understanding how feedback gets contaminated, and designing communication flows that reflect reality instead of assuming one message can cover every touchpoint.
+  Whether the fix ships or not, the ability to see past the symptom to the root cause is what separates reactive problem-solving from proactive design. This project is an example of that mindset applied to a real-world operational challenge.</p>
+</footer>
+</body>
+</html>

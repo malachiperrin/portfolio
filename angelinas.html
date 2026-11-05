@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angelina's — Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .mockup-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+
+    .mockup-card {
+      border: 1px solid rgba(255,255,255,0.2);
+      padding: 0.5rem;
+      transition: opacity 0.2s;
+    }
+
+    .mockup-card:hover {
+      opacity: 0.8;
+    }
+
+    .mockup-card img,
+    .mockup-card video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      opacity: 0.7;
+    }
+
+    .back-link:hover {
+      opacity: 1;
+    }
+
+    .project-meta {
+      margin-bottom: 2rem;
+      opacity: 0.6;
+      font-size: 0.9rem;
+    }
+
+    .description p {
+      margin: 10px;
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a href="index.html" class="back-link">&larr; Back to home</a>
+
+    <header>
+      <h1>Angelina's</h1>
+      <p class="project-meta">
+        <span>Digital & Print Media</span> •
+        <span>Date: Oct 2026</span>
+      </p>
+    </header>
+
+    <section class="description">
+      <h2>About this project</h2>
+
+      <p>This is a branding and web package for a local pizzeria. I changed the business name and logo for confidentiality purposes, using an AI-generated alternative that preserves the spirit of the original identity.</p>
+
+      <p>The client had a hard cap of $800. They needed printed materials and a web presence, but could not afford a full custom site with integrated online ordering. This constraint shaped every decision in the project.</p>
+
+      <p>For print, I designed business cards and an 18x24 inch promotional poster in Figma and Canva. The layout prioritizes simplicity and ease of printing at any standard vendor. No special finishes or expensive stock required.</p>
+
+      <p>For the website, I scoped a 4-to-5 page site that covers essentials: Home, Menu, About, Locations, and Contact. The design is clean and mobile-first since most customers browse on phones.</p>
+
+      <p>Online ordering was handled by integrating third-party platforms like UberEats, GrubHub, and DoorDash rather than building a custom checkout. This saves thousands in development and maintenance while still meeting customer expectations. The same logic applies to email marketing. I recommended Klaviyo or Mailchimp instead of building a proprietary newsletter system.</p>
+    </section>
+
+    <section class="mockup-grid">
+
+        <!-- Additional screenshot -->
+        <div class="mockup-card">
+          <iframe src="/assets/images/angelinas/Business%20Card.pdf" width="100%" height="300px"></iframe>
+          <figcaption>Business Card</figcaption>
+        </div>
+
+        <div class="mockup-card">
+          <iframe src="/assets/images/angelinas/Poster.pdf" width="100%" height="600px"></iframe>
+          <figcaption>18"x24" Poster</figcaption>
+        </div>
+      <!-- Static screenshot -->
+      <div class="mockup-card">
+        <iframe src="/assets/images/angelinas/website.pdf" width="100%" height="600px"></iframe>
+        <figcaption>Website</figcaption>
+      </div>
+
+      <!-- Another screenshot -->
+      <!--<div class="mockup-card">
+        <img src="../assets/screenshots/mobile-view.png" alt="Mobile view of angelinas">
+        <figcaption>Mobile View</figcaption>
+      </div>-->
+
+      <!-- Video demo -->
+      <!--<div class="mockup-card">
+        <video controls muted playsinline>
+          <source src="../assets/videos/project-demo.mp4" type="video/mp4">
+          Your browser does not support video playback.
+        </video>
+        <figcaption>Interactive Demo</figcaption>
+      </div>-->
+
+
+    </section>
+
+
+  </main>
+</body>
+</html>
