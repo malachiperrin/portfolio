@@ -1,20 +1,8 @@
 # Designer & Developer
 
-**[Your Name]**
+**Malachi Perrin**
 
-I design and build things that solve real problems. Sometimes that means a brand identity, sometimes a website, sometimes an email flow nobody asked me to fix. My work tends to start with a small observation and end with a system.
-
-📍 [City, State] · ✉️ [your@email.com] · 🔗 [yourwebsite.com] · 💼 [linkedin.com/in/you]
-
----
-
-## About
-
-I work at the intersection of design and front-end development. That means I can take a project from concept through execution without handing it off halfway: research, wireframes, visual design, and the code that makes it real.
-
-Most of my work has been for small businesses operating on tight budgets. That constraint has shaped how I think. Good design is often about knowing what *not* to build. I lean on existing platforms when they solve the problem better than a custom build would, and I save the custom work for the parts that actually differentiate a business.
-
-I care about clarity, accessibility, and shipping things that hold up after launch.
+I design and build things that solve real problems.
 
 ---
 
@@ -58,24 +46,6 @@ Client name and logo were replaced with AI-generated alternatives for confidenti
 **Development:** HTML · CSS · JavaScript · Responsive layout · Git
 **Strategy:** Journey mapping · User flows · Content structure · Accessibility basics
 **Platforms:** Shopify · WordPress · Klaviyo · Mailchimp · Third-party delivery integrations
-
----
-
-## How I Work
-
-**Start with the symptom, trace to the cause.** A bad review, a low conversion rate, a confusing form. The visible problem is rarely the actual problem.
-
-**Respect the budget.** Constraints are design inputs, not obstacles. A solution the client cannot maintain is not a solution.
-
-**Close the loop.** Every flow, form, and interaction should tell the user what happens next.
-
----
-
-## Currently
-
-Open to freelance design and front-end work, contract roles, and full-time positions.
-
-📩 Reach me at [your@email.com]
 
 ---
 
